@@ -130,7 +130,7 @@
       <div class="col-6" style="border:1px solid #333">Auto Layout</div>
       <div class="col-4" style="border:1px solid #333">Auto Layout</div>
     </div>
-
+    
     <!-- EQUAL WIDTH STACKED -->
     <div class="row">
       <div class="col-sm" style="border:1px solid #333">Equal Width Stack</div>
@@ -138,46 +138,47 @@
       <div class="col-sm" style="border:1px solid #333">Equal Width Stack</div>
     </div>
     
+    
 
     <!-- ORDERING -->
     <div class="row">
-      <div class="col" style="border:1px solid #333">
+      <div class="col order-3" style="border:1px solid #333">
         First
       </div>
-      <div class="col" style="border:1px solid #333">
+      <div class="col order-2" style="border:1px solid #333">
         Second
       </div>
-      <div class="col" style="border:1px solid #333">
+      <div class="col order-1" style="border:1px solid #333">
         Third
       </div>
     </div>
 
     <!-- OFFSETTING -->
-    <div>
+    <div class="row">
       <!-- 6 column div offset by 3 -->
-      <div style="border:1px solid #333">.col-md-6 .offset-md-3</div>
+      <div class="col-md-6 offset-md-3" style="border:1px solid #333">.col-md-6 .offset-md-3</div>
     </div>
-    <div>
+    <div class="row">
       <!-- 2 4 column divs, the second offset by 4 -->
-      <div style="border:1px solid #333">.col-md-4</div>
-      <div style="border:1px solid #333">.col-md-4 .offset-md-4</div>
+      <div class="col-md-4 " style="border:1px solid #333">.col-md-4</div>
+      <div class="col-md-4 offset-md-4"style="border:1px solid #333">.col-md-4 .offset-md-4</div>
     </div>
 
-    <div>
+    <div class="row">
       <!-- 2 3 column divs, both offset by 3 -->
-      <div style="border:1px solid #333">.col-md-3 .offset-md-3</div>
-      <div style="border:1px solid #333">.col-md-3 .offset-md-3</div>
+      <div class="col-md-3 offset-md-3" style="border:1px solid #333">.col-md-3 .offset-md-3</div>
+      <div class="col-md-3 offset-md-3"style="border:1px solid #333">.col-md-3 .offset-md-3</div>
     </div>
 
     <!-- NESTING -->
-    <div>
-      <div style="border:1px solid blue">
+    <div class="row">
+      <div class="col-sm-9" style="border:1px solid blue">
         Level 1: .col-sm-9
-        <div>
-          <div style="border:1px solid red">
+        <div class="row">
+          <div class="col-8 col-sm-6" style="border:1px solid red">
             Level 2: .col-8 .col-sm-6
           </div>
-          <div style="border:1px solid red">
+          <div class="col-4 col-sm-6" style="border:1px solid red">
             Level 2: .col-4 .col-sm-6
           </div>
         </div>
